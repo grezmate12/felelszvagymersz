@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDark">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Játékmód -->
+        <TextView
+            android:id="@+id/tvMode"
+            android:text="@string/game_mode_normal"
+            android:textSize="20sp"
+            android:textColor="@color/neonBlue"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Utasítás -->
+        <TextView
+            android:id="@+id/tvInstruction"
+            android:text="@string/press_a_button"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Következő játékos gomb -->
+        <Button
+            android:id="@+id/btnNextPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_neon_blue"
+            android:textColor="@color/neonBlue"
+            android:textSize="18sp"
+            android:text="@string/next_player"
+            android:layout_marginBottom="25dp"
+            />
+        <ImageView
+            android:id="@+id/ivGlow"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="-220dp"
+            android:src="@drawable/bottle_glow"
+            android:alpha="0"
+            android:layout_gravity="center"
+            />
+        <!-- Pörgetős üveg -->
+        <ImageView
+            android:id="@+id/ivBottle"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/bottle"
+            android:layout_gravity="center"
+            android:contentDescription="Bottle"/>
+
+        <!-- Következő játékos neve -->
+        <TextView
+            android:id="@+id/tvCurrentPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_player_selected"
+            android:textColor="@color/neonPink"
+            android:textSize="26sp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Eredmény / kérdés / feladat -->
+        <TextView
+            android:id="@+id/textView"
+            android:text="@string/there_is_the_question"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/neon_glow_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center" />
+
+        <!-- FELELSZ – MERSZ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="35dp">
+
+            <Button
+                android:id="@+id/btnTruth"
+                android:text="@string/truth"
+                android:background="@drawable/btn_neon_blue"
+                android:textColor="@color/neonBlue"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="12dp"/>
+
+            <Button
+                android:id="@+id/btnDare"
+                android:text="@string/dare"
+                android:background="@drawable/btn_neon_pink"
+                android:textColor="@color/neonPink"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- Játékmód váltás -->
+        <Button
+            android:id="@+id/btnSwitchMode"
+            android:text="@string/mode_switch_normal_drinking"
+            android:background="@drawable/btn_neon_pink"
+            android:textColor="@color/neonPink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
+

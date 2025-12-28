@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:background="@drawable/neon_player_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvPlayerName"
+        android:text="Játékos"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_marginStart="12dp"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#AA000000"
+        android:padding="6dp"
+        android:text="✖"
+        android:textColor="#FF0080" />
+</RelativeLayout>
