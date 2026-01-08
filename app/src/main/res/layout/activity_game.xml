@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundDark">
@@ -115,15 +116,42 @@
         </LinearLayout>
 
         <!-- Játékmód váltás -->
-        <Button
-            android:id="@+id/btnSwitchMode"
-            android:text="@string/mode_switch_normal_drinking"
-            android:background="@drawable/btn_neon_pink"
-            android:textColor="@color/neonPink"
-            android:layout_width="wrap_content"
+        <!-- Játékmód váltás - Kétállású csúszka -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal mód"
+                android:textColor="@color/neonPink"
+                android:textSize="16sp"
+                android:layout_marginEnd="5dp"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchGameMode"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:minWidth="50dp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ivós mód"
+                android:textColor="@color/neonPink"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

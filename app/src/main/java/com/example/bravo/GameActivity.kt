@@ -8,7 +8,9 @@ import android.view.animation.RotateAnimation
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.switchmaterial.SwitchMaterial
 
 /**
  * A játék 3. és egyben utolsó Layout-ja.
@@ -43,9 +45,11 @@ class GameActivity : AppCompatActivity() {
         val btnNextPlayer = findViewById<Button>(R.id.btnNextPlayer)
         val btnTruth = findViewById<Button>(R.id.btnTruth)
         val btnDare = findViewById<Button>(R.id.btnDare)
-        val btnSwitch = findViewById<Button>(R.id.btnSwitchMode)
+        val switchGameMode = findViewById<SwitchMaterial>(R.id.switchGameMode)
         val pulse = AnimationUtils.loadAnimation(this, R.anim.button_pulse)
 
+        // Csúszka kezdeti állapota
+        switchGameMode.isChecked = false  // Alapértelmezetten Normal mód
 
         // Gombok
         // Következő játékos választása
@@ -86,15 +90,19 @@ class GameActivity : AppCompatActivity() {
             currentPlayer = null
         }
 
-        btnSwitch.setOnClickListener {
-            it.startAnimation(pulse)
-            mode = if (mode == "normal") "drinking" else "normal"
+        // Csúszka state change listener
+        switchGameMode.setOnCheckedChangeListener { _, isChecked ->
+            mode = if (isChecked) "drinking" else "normal"
             tvMode.text = getString(
                 R.string.game_mode_status,
                 if (mode == "normal") getString(R.string.mode_normal)
                 else getString(R.string.mode_drinking)
             )
-
+            Toast.makeText(
+                this,
+                if (isChecked) "Ivós mód aktiválva!" else "Normal mód aktiválva!",
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
         // Játékosok
@@ -135,8 +143,6 @@ class GameActivity : AppCompatActivity() {
 
                 // Neon glow kikapcsol
                 ivGlow.animate().alpha(0f).setDuration(500).start()
-
-
 
                 // Következő játékos kiírása
                 val selectedPlayer = players.random()
