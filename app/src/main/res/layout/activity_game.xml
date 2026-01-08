@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundDark">
@@ -120,7 +121,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center"
+            android:gravity="center_vertical"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="20dp">
 
@@ -130,14 +131,17 @@
                 android:text="Normal mód"
                 android:textColor="@color/neonPink"
                 android:textSize="16sp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginEnd="5dp"/>
 
             <com.google.android.material.switchmaterial.SwitchMaterial
                 android:id="@+id/switchGameMode"
-                android:layout_width="150dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:minWidth="50dp" />
+                android:layout_marginHorizontal="30dp"
+                android:minWidth="50dp"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -145,7 +149,7 @@
                 android:text="Ivós mód"
                 android:textColor="@color/neonPink"
                 android:textSize="16sp"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="5dp"/>
 
         </LinearLayout>
 
