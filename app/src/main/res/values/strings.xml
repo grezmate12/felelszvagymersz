@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Bravo</string>
+    <string name="j_t_km_d_norm_l">Game mode: normal</string>
+    <string name="nyomj_egy_gombot">Press a button!</string>
+    <string name="felelsz">Truth</string>
+    <string name="mersz">Dare</string>
+    <string name="m_d_v_lt_s_norm_l_iv_s">Mode switch (normal/drinking)</string>
+    <string name="cross">➕</string>
+    <string name="game_mode_normal">Game mode: normal</string>
+    <string name="next_player">Next player</string>
+    <string name="press_a_button">Press a button!</string>
+    <string name="there_is_the_question">There is the question</string>
+    <string name="truth">Truth</string>
+    <string name="dare">Dare</string>
+    <string name="mode_switch_normal_drinking">Mode switch (normal/drinking)</string>
+    <string name="player_question">%1$s\'s question:\n%2$s</string>
+    <string name="player_dare">%1$s\'s dare:\n%2$s</string>
+    <string name="select_player_first">Choose a player first!</string>
+    <string name="no_player_selected">Select a player</string>
+    <string name="players_list">Players: %1$s</string>
+    <string name="game_mode_status">Game mode: %1$s</string>
+    <string name="mode_normal">normal</string>
+    <string name="mode_drinking">drinking</string>
+    <string name="next_player2">Next player: %1$s</string>
+    <string name="Truth_or_Dare">Truth or Dare</string>
+    <string name="Play">Play</string>
+    <string name="Exit">Exit</string>
+    <string name="Add_players">Add players</string>
+    <string name="Player_name">Name</string>
+    <string name="Start">Start Game</string>
+</resources>

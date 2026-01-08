@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Külső neon lila glow -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000"/>
+            <corners android:radius="20dp"/>
+            <padding
+                android:top="12dp"
+                android:bottom="12dp"
+                android:left="12dp"
+                android:right="12dp"/>
+            <stroke
+                android:width="6dp"
+                android:color="#C400FF" /> <!-- élénk neon lila -->
+        </shape>
+    </item>
+
+</layer-list>

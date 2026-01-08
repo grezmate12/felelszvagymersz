@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="neonPink">#FF0080</color>
+    <color name="neonBlue">#00E5FF</color>
+    <color name="neonPurple">#C400FF</color>
+    <color name="backgroundDark">#0A0A0A</color>
+    <color name="cardDark">#1A1A1A</color>
+</resources>

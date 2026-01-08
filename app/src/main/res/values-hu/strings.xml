@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bravo</string>
+    <string name="j_t_km_d_norm_l">Játékmód: normál</string>
+    <string name="nyomj_egy_gombot">Nyomj egy gombot!</string>
+    <string name="felelsz">Felelsz</string>
+    <string name="mersz">Mersz</string>
+    <string name="m_d_v_lt_s_norm_l_iv_s">Mód váltás (normál/ivós)</string>
+    <string name="cross">➕</string>
+    <string name="game_mode_normal">Játékmód: normál</string>
+    <string name="next_player">Következő játékos</string>
+    <string name="press_a_button">Nyomj egy gombot!</string>
+    <string name="there_is_the_question">Itt jelenik meg a kérdés</string>
+    <string name="truth">Felelsz</string>
+    <string name="dare">Mersz</string>
+    <string name="mode_switch_normal_drinking">Mód váltás (normál/ivós)</string>
+    <string name="player_question">%1$s kérdése:\n%2$s</string>
+    <string name="player_dare">%1$s feladata:\n%2$s</string>
+    <string name="select_player_first">Először válassz egy játékost!</string>
+    <string name="no_player_selected">Válassz játékost!</string>
+    <string name="players_list">Játékosok: %1$s</string>
+    <string name="game_mode_status">Játékmód: %1$s</string>
+    <string name="mode_normal">normál</string>
+    <string name="mode_drinking">ivós</string>
+    <string name="next_player2">Következő játékos: %1$s</string>
+    <string name="Truth_or_Dare">Felelsz vagy Mersz</string>
+    <string name="Play">Játék</string>
+    <string name="Exit">Kilépés</string>
+    <string name="Add_players">Add meg a játékosokat</string>
+    <string name="Player_name">Név</string>
+    <string name="Start">Játék Indítása</string>
+</resources>
