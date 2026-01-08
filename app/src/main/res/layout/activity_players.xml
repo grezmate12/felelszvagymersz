@@ -32,7 +32,11 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#666666"
             android:background="#222222"
-            android:padding="12dp"/>
+            android:padding="20dp"
+            android:maxLength="20"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóöőúüűÁÉÍÓÖŐÚÜŰ"
+            android:singleLine="true"
+            />
 
         <Button
             android:id="@+id/btnAddPlayer"
