@@ -1,0 +1,4 @@
+Offline az applikáció.
+Teljesítményteszt Android Studio-ban végezve.
+-Memória teszt (Analyze Memory Usage / Heap Dump)
+-CPU és Akadozás teszt (Capture System Activities)
